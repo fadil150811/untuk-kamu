@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Hallo Pink</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff0f5; /* Warna pink muda */
+        }
+        
+        .ucapan {
+            font-size: 28px;
+            color: #ff1493; /* Warna pink tua */
+            padding: 25px 40px;
+            border-radius: 15px;
+            background-color: #ffc0cb; /* Warna pink cerah */
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+            animation: bounce 2s infinite, colorChange 4s infinite;
+            text-align: center;
+            font-weight: bold;
+            border: 3px dashed #db7093;
+        }
+
+        /* Animasi bouncing */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Animasi perubahan warna */
+        @keyframes colorChange {
+            0% {
+                background-color: #ffc0cb;
+            }
+            50% {
+                background-color: #ffb6c1;
+            }
+            100% {
+                background-color: #ffc0cb;
+            }
+        }
+
+        /* Efek hover */
+        .ucapan:hover {
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            50% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+            100% { transform: rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="ucapan">
+        Hallo! Lagi ngapain? 😊
+    <div>
+</div>
+</body>
+</html>
